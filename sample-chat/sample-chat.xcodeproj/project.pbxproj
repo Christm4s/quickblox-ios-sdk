@@ -17,6 +17,9 @@
 		2CC758A51B0F0EB300999187 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		584B33AF1C2AF4490041B431 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 584B33AE1C2AF4490041B431 /* Localizable.strings */; };
 		5857DCD11BD91F3700AB2D53 /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5857DCD01BD91F3700AB2D53 /* Quickblox.framework */; };
+		68060DEA1D26F247004A471D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68060DE71D26F247004A471D /* FBSDKCoreKit.framework */; };
+		68060DEB1D26F247004A471D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68060DE81D26F247004A471D /* FBSDKLoginKit.framework */; };
+		68060DEC1D26F247004A471D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68060DE91D26F247004A471D /* FBSDKShareKit.framework */; };
 		77574711118E44F680DD7EC4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1956EB9D11485189AD3B71 /* libPods.a */; };
 		86104A1E1B0B5E1900464D52 /* ServicesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86104A1D1B0B5E1900464D52 /* ServicesManager.m */; };
 		8614B8DD1B8205D400DBB753 /* UsersDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8614B8DC1B8205D400DBB753 /* UsersDataSource.m */; };
@@ -72,6 +75,9 @@
 		1C300553BEFAEB30F2850033 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		584B33AE1C2AF4490041B431 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ../Localizable.strings; sourceTree = "<group>"; };
 		5857DCD01BD91F3700AB2D53 /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quickblox.framework; path = ../Framework/Quickblox.framework; sourceTree = "<group>"; };
+		68060DE71D26F247004A471D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		68060DE81D26F247004A471D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		68060DE91D26F247004A471D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		86104A1C1B0B5E1900464D52 /* ServicesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesManager.h; sourceTree = "<group>"; };
 		86104A1D1B0B5E1900464D52 /* ServicesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesManager.m; sourceTree = "<group>"; };
 		8614B8DB1B8205D400DBB753 /* UsersDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersDataSource.h; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68060DEB1D26F247004A471D /* FBSDKLoginKit.framework in Frameworks */,
 				5857DCD11BD91F3700AB2D53 /* Quickblox.framework in Frameworks */,
 				BFE6FBC2180E9E9600E64AC4 /* AVFoundation.framework in Frameworks */,
 				BFE6FBC0180E9E9000E64AC4 /* CoreVideo.framework in Frameworks */,
@@ -143,6 +150,8 @@
 				BFE6FBB2180E9E5E00E64AC4 /* SystemConfiguration.framework in Frameworks */,
 				BFE6FBB0180E9E5300E64AC4 /* CFNetwork.framework in Frameworks */,
 				BFE6FB7A180E8EF100E64AC4 /* UIKit.framework in Frameworks */,
+				68060DEC1D26F247004A471D /* FBSDKShareKit.framework in Frameworks */,
+				68060DEA1D26F247004A471D /* FBSDKCoreKit.framework in Frameworks */,
 				BFE6FB76180E8EF100E64AC4 /* Foundation.framework in Frameworks */,
 				77574711118E44F680DD7EC4 /* libPods.a in Frameworks */,
 			);
@@ -223,6 +232,9 @@
 		BFE6FB74180E8EF100E64AC4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				68060DE71D26F247004A471D /* FBSDKCoreKit.framework */,
+				68060DE81D26F247004A471D /* FBSDKLoginKit.framework */,
+				68060DE91D26F247004A471D /* FBSDKShareKit.framework */,
 				5857DCD01BD91F3700AB2D53 /* Quickblox.framework */,
 				BFE6FBC1180E9E9600E64AC4 /* AVFoundation.framework */,
 				BFE6FBBF180E9E9000E64AC4 /* CoreVideo.framework */,
@@ -372,7 +384,7 @@
 				ORGANIZATIONNAME = Quickblox;
 				TargetAttributes = {
 					BFE6FB71180E8EF100E64AC4 = {
-						DevelopmentTeam = 8885H5G2YX;
+						DevelopmentTeam = BMMZNRQB44;
 					};
 				};
 			};
@@ -562,11 +574,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Injoit LTD (8885H5G2YX)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../Framework,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sample-chat/sample-chat-Prefix.pch";
@@ -680,6 +693,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../Framework,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sample-chat/sample-chat-Prefix.pch";
@@ -705,11 +719,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Injoit LTD (8885H5G2YX)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../Framework,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sample-chat/sample-chat-Prefix.pch";
